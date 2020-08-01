@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dc: Iniciar secion</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/login-style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!--Contenedor-->
+    <div class="container">
+   <a href="index.html"><header><img src="img/logo7.png">
+    </header>
+     </a>
+    <h2>Iniciar Sesion</h2>
+
+    <form>
+        <!--Correo-->
+        <div class="input-field">
+            <input type="text" name="" id="" required>
+            <label>Correo</label>
+        </div>
+        <!--Contraseña-->
+        <div class="input-field">
+            <input class="pswrd" type="password" name="" id="" required minlength="6" maxlength="9" onkeypress="return isNumberKey(event)"> 
+            <span class="show">SHOW</span>           
+            <label>Contraseña</label>
+        </div>
+        <!--Boton de Enviar-->
+        <div class="button">
+        <div class="inner">
+            <button type="submit">Ingresar</button>
+        </div>
+    </div>
+    </form>
+         <div class="signup">
+            <a href="">Ha olvidado la Contraseña?</a>
+        </div>
+           <div class="signup">
+               No eres miembro?<a href="signup.html">Registrate</a>
+           </div>
+</div>
+
+
+<!-- Script para mostrarla contraseña -->
+<script>
+  var input = document.querySelector('.pswrd');
+  var show = document.querySelector('.show');
+  show.addEventListener('click', active);
+  function active(){
+      if(input.type == "password"){
+          input.type = "text";
+          show.style.color = "rgb(0,112,218)";
+          show.textContent = "HIDE";
+      }else{
+        input.type = "password";
+        show.textContent = "SHOW";
+      }
+  }
+</script>
+</body>
+</html>
