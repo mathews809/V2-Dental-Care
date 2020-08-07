@@ -70,3 +70,18 @@ prevBtnFourth.addEventListener("click", function (){
     current -= 1;
     
 });
+
+// Para mostrar la clave
+var input = document.querySelector('.pswrd');
+var show = document.querySelector('.show');
+show.addEventListener('click', active);
+function active(){
+    if(input.type == "password"){
+        input.type = "text";
+        show.style.color = "rgb(0,112,218)";
+        show.textContent = "HIDE"; 
+    }else{
+      input.type = "password";
+      show.textContent = "SHOW";
+    }
+}

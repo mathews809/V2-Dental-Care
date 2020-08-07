@@ -214,3 +214,9 @@ form .page .btns button.next {
   display: block;
   color: #fff;
 }
+/*  */
+@media (max-width:414px){
+  body{
+    background:#fff;
+  }
+}
